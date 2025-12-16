@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const burgerToggle = document.querySelector('.burger-menu-toggle');
     const nav = document.querySelector('.nav');
     const navLinks = document.querySelectorAll('.nav__link');
+    const navItems = document.querySelectorAll('.nav__item');
     const body = document.body;
 
     if (burgerToggle && nav) {
@@ -60,12 +61,22 @@ document.addEventListener('DOMContentLoaded', function() {
             burgerToggle.classList.remove('active');
             nav.classList.remove('active');
             body.classList.remove('menu-open');
+            
+            // Сбрасываем задержки анимации для элементов при закрытии
+            navItems.forEach(function(item) {
+                item.style.transitionDelay = '0s';
+            });
         }
 
         function openMenu() {
             burgerToggle.classList.add('active');
             nav.classList.add('active');
             body.classList.add('menu-open');
+            
+            // Восстанавливаем задержки анимации для элементов при открытии
+            navItems.forEach(function(item, index) {
+                item.style.transitionDelay = (0.1 + index * 0.05) + 's';
+            });
         }
 
         burgerToggle.addEventListener('click', function(e) {
