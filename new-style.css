@@ -1,3 +1,67 @@
+/* Подключение шрифтов */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica-01.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica-Bold-02.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica-Oblique-03.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica-BoldOblique-04.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Roman.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/HelveticaNeue-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 /* Полностью новые стили вытянутые из других файлов */
 
 .section-indent {

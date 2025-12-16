@@ -29561,6 +29561,7 @@ a:has(.news-card):hover {
 
 .news-card__title {
     font-family: Helvetica;
+    margin: 0;
     font-weight: 700;
     font-size: 17px;
     line-height: 127%;
@@ -29618,7 +29619,7 @@ a:has(.news-card):hover {
 
 .news-card--small .news-card__body {
     padding: 15px 22px;
-    gap: 10px;
+    gap: 5px;
 }
 
 .news-card--small .news-card__title {
