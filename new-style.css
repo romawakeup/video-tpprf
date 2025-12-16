@@ -204,6 +204,10 @@
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.contacts .row {
+    margin-bottom: 12px;
+}
+
 @media(max-width: 1115px) {
     .nav__item {
         width: 100%;
@@ -452,7 +456,7 @@
         -webkit-overflow-scrolling: touch;
         touch-action: pan-x;
     }
-    
+
     .calendar__days {
         overflow-x: auto;
         overflow-y: hidden;
@@ -462,9 +466,13 @@
         width: 100%;
         touch-action: pan-x;
     }
-    
+
     .calendar__day {
         flex-shrink: 0;
+    }
+
+    .contacts .row {
+        margin-bottom: 0;
     }
 }
 
