@@ -1,0 +1,376 @@
+/* Полностью новые стили вытянутые из других файлов */
+
+.section-indent {
+    padding: 30px 0;
+}
+
+.publications {
+    position: relative;
+}
+
+.publications .row {
+    padding: 0 0 60px 0;
+}
+
+.publications::after {
+    height: 35px;
+    width: 100vw;
+    display: block;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    bottom: 30px;
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0) 0%, rgba(207, 207, 207, 0.34) 100%);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.nav__link {
+    position: relative;
+    transition: color .3s ease;
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FF6900;
+    transition: width .3s ease;
+}
+
+.nav__link:hover {
+    color: #FF6900;
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+.calendar-swiper .swiper-button-next,
+.calendar-swiper .swiper-button-prev {
+    width: 45px;
+    height: 45px;
+    background: #FFFFFF80;
+    border: 1px solid #BEBEBE;
+    border-radius: 50%;
+    margin-top: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.calendar-swiper .swiper-button-next:hover,
+.calendar-swiper .swiper-button-prev:hover {
+    background: #FFFFFF;
+    border-color: #606060;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.calendar-swiper .swiper-button-next:hover::after,
+.calendar-swiper .swiper-button-prev:hover::after {
+    border-color: #606060;
+}
+
+.calendar-swiper .swiper-button-next::after,
+.calendar-swiper .swiper-button-prev::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid #8F8F8F;
+    border-right: 3px solid #8F8F8F;
+    top: 50%;
+    left: 50%;
+    font-size: 0;
+}
+
+.calendar-swiper .swiper-button-next::after {
+    left: 45%;
+}
+
+.calendar-swiper .swiper-button-next::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.calendar-swiper .swiper-button-prev::after {
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.calendar-swiper .swiper-button-next {
+    right: 0;
+}
+
+.calendar-swiper .swiper-button-prev {
+    left: 0;
+}
+
+.btn-load-more {
+    font-family: Helvetica Neue;
+    padding: 8px 23px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 141%;
+    border: 1px solid #D9D9D9;
+    background-color: transparent;
+    color: #767676;
+    transition: all 0.3s ease;
+}
+
+.btn-load-more:hover {
+    background-color: transparent;
+    color: #FF6900;
+    border: 1px solid #FF6900;
+}
+
+.btn-load-more:focus {
+    background-color: transparent;
+    color: #FF6900;
+    border: 1px solid #FF6900;
+    box-shadow: #ff6a007e 0 0 0 .2rem;
+}
+
+/* Анимация для новых карточек */
+.news-page__list .col-12.col-sm-6.col-md-3.py-3 {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Бургер-меню */
+.burger-menu-toggle {
+    display: none;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.burger-menu-toggle:focus {
+    outline: 2px solid #FF6900;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.burger-menu-toggle__line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.burger-menu-toggle__line:nth-child(1) {
+    top: 0;
+}
+
+.burger-menu-toggle__line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger-menu-toggle__line:nth-child(3) {
+    bottom: 0;
+}
+
+.burger-menu-toggle.active .burger-menu-toggle__line:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.burger-menu-toggle.active .burger-menu-toggle__line:nth-child(2) {
+    opacity: 0;
+    transform: translateY(-50%) scale(0);
+}
+
+.burger-menu-toggle.active .burger-menu-toggle__line:nth-child(3) {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Мобильное меню */
+@media (max-width: 991.98px) {
+    .header {
+        margin: 0;
+    }
+
+    .header__bar {
+        position: relative;
+    }
+
+    .header__bar .d-flex {
+        align-items: center;
+    }
+
+    .burger-menu-toggle {
+        display: flex;
+    }
+
+    .header__main {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        padding: 0;
+    }
+
+    .header__main::after {
+        content: none;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow-y: auto;
+        padding: 90px 20px 20px 20px;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav.active {
+        visibility: visible;
+        left: 0;
+    }
+
+    .nav__search-mobile {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #E5E5E5;
+    }
+
+    .nav__search-mobile .news-search {
+        width: 100%;
+        position: relative;
+    }
+
+    .nav__search-mobile .news-search input {
+        width: 100% !important;
+        padding: 10px 40px 10px 15px;
+        font-size: 14px;
+        border-radius: 7px;
+        background-color: #F3F3F5;
+        border: 1px solid #E5E5E5;
+    }
+
+    .nav__search-mobile .news-search__icon {
+        position: absolute;
+        right: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    /* Скрываем поиск в header__actions на мобильных */
+    .header__actions .news-search {
+        display: none !important;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .nav__item {
+        width: 100%;
+        border-bottom: 1px solid #E5E5E5;
+    }
+
+    .nav__item:last-child {
+        border-bottom: none;
+    }
+
+    .nav__link {
+        display: block;
+        padding: 15px 0;
+        font-size: 16px;
+        color: #000;
+        text-decoration: none;
+        transition: color 0.3s ease, padding-left 0.3s ease;
+        width: 100%;
+    }
+
+    .nav__link:hover,
+    .nav__link:focus {
+        color: #FF6900;
+        padding-left: 10px;
+        outline: none;
+    }
+
+    .nav__link::after {
+        display: none;
+    }
+
+    .nav::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    .nav.active::before {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    /* Предотвращение прокрутки body при открытом меню */
+    body.menu-open {
+        overflow: hidden;
+    }
+}
+
+@media(max-width: 769px) {
+    .section-indent {
+        padding: 15px 0;
+    }
+
+    .publications .row {
+    padding: 0 0 30px 0;
+}
+}
+
+/* Скрываем поиск в меню на десктопе */
+@media (min-width: 992px) {
+    .nav__search-mobile {
+        display: none;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 575.98px) {
+    .nav {
+        max-width: 100%;
+    }
+}

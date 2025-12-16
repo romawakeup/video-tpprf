@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Видео-канал «ТПП-Информ»" />
+    <link href="/bitrix/cache/css/vi/fm-design/kernel_main/kernel_main_v1.css?176244802310074" type="text/css"
+        rel="stylesheet" />
+    <link href="/bitrix/js/intranet/intranet-common.min.css?167127502861199" type="text/css" rel="stylesheet" />
+    <link href="/bitrix/js/ui/design-tokens/dist/ui.design-tokens.min.css?168642192022029" type="text/css"
+        rel="stylesheet" />
+    <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16712749932320" type="text/css"
+        rel="stylesheet" />
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?168642243726598" type="text/css"
+        rel="stylesheet" />
+    <link href="/bitrix/cache/css/vi/fm-design/kernel_sidepanel/kernel_sidepanel_v1.css?17624480238359" type="text/css"
+        rel="stylesheet" />
+    <link
+        href="/bitrix/cache/css/vi/fm-design/page_1b71a5b01ff256d8826e35e543b6bfb5/page_1b71a5b01ff256d8826e35e543b6bfb5_v1.css?176244802341094"
+        type="text/css" rel="stylesheet" />
+    <link
+        href="/bitrix/cache/css/vi/fm-design/template_9822244a56c1e5751d9c0f4b74b463b3/template_9822244a56c1e5751d9c0f4b74b463b3_v1.css?1762448023453050"
+        type="text/css" data-template-style="true" rel="stylesheet" />
+    <script
+        type="text/javascript">if (!window.BX) window.BX = {}; if (!window.BX.message) window.BX.message = function (mess) { if (typeof mess === 'object') { for (let i in mess) { BX.message[i] = mess[i]; } return true; } };</script>
+    <script
+        type="text/javascript">(window.BX || top.BX).message({ 'pull_server_enabled': 'Y', 'pull_config_timestamp': '0', 'pull_guest_mode': 'N', 'pull_guest_user_id': '0' }); (window.BX || top.BX).message({ 'PULL_OLD_REVISION': 'Для продолжения корректной работы с сайтом необходимо перезагрузить страницу.' });</script>
+    <script
+        type="text/javascript">(window.BX || top.BX).message({ 'JS_CORE_LOADING': 'Загрузка...', 'JS_CORE_NO_DATA': '- Нет данных -', 'JS_CORE_WINDOW_CLOSE': 'Закрыть', 'JS_CORE_WINDOW_EXPAND': 'Развернуть', 'JS_CORE_WINDOW_NARROW': 'Свернуть в окно', 'JS_CORE_WINDOW_SAVE': 'Сохранить', 'JS_CORE_WINDOW_CANCEL': 'Отменить', 'JS_CORE_WINDOW_CONTINUE': 'Продолжить', 'JS_CORE_H': 'ч', 'JS_CORE_M': 'м', 'JS_CORE_S': 'с', 'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние', 'JSADM_AI_ALL_NOTIF': 'Показать все', 'JSADM_AUTH_REQ': 'Требуется авторизация!', 'JS_CORE_WINDOW_AUTH': 'Войти', 'JS_CORE_IMAGE_FULL': 'Полный размер' });</script>
+
+    <script type="text/javascript" src="/bitrix/js/main/core/core.min.js?1686422555219752"></script>
+
+    <script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js', '/bitrix/js/main/core/core_promise.js', '/bitrix/js/main/polyfill/promise/js/promise.js', '/bitrix/js/main/loadext/loadext.js', '/bitrix/js/main/loadext/extension.js', '/bitrix/js/main/polyfill/promise/js/promise.js', '/bitrix/js/main/polyfill/find/js/find.js', '/bitrix/js/main/polyfill/includes/js/includes.js', '/bitrix/js/main/polyfill/matches/js/matches.js', '/bitrix/js/ui/polyfill/closest/js/closest.js', '/bitrix/js/main/polyfill/fill/main.polyfill.fill.js', '/bitrix/js/main/polyfill/find/js/find.js', '/bitrix/js/main/polyfill/matches/js/matches.js', '/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js', '/bitrix/js/main/core/core.js', '/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js', '/bitrix/js/main/lazyload/dist/lazyload.bundle.js', '/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js', '/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+    </script>
+    <script
+        type="text/javascript">(window.BX || top.BX).message({ 'AMPM_MODE': false }); (window.BX || top.BX).message({ 'MONTH_1': 'Январь', 'MONTH_2': 'Февраль', 'MONTH_3': 'Март', 'MONTH_4': 'Апрель', 'MONTH_5': 'Май', 'MONTH_6': 'Июнь', 'MONTH_7': 'Июль', 'MONTH_8': 'Август', 'MONTH_9': 'Сентябрь', 'MONTH_10': 'Октябрь', 'MONTH_11': 'Ноябрь', 'MONTH_12': 'Декабрь', 'MONTH_1_S': 'января', 'MONTH_2_S': 'февраля', 'MONTH_3_S': 'марта', 'MONTH_4_S': 'апреля', 'MONTH_5_S': 'мая', 'MONTH_6_S': 'июня', 'MONTH_7_S': 'июля', 'MONTH_8_S': 'августа', 'MONTH_9_S': 'сентября', 'MONTH_10_S': 'октября', 'MONTH_11_S': 'ноября', 'MONTH_12_S': 'декабря', 'MON_1': 'янв', 'MON_2': 'фев', 'MON_3': 'мар', 'MON_4': 'апр', 'MON_5': 'мая', 'MON_6': 'июн', 'MON_7': 'июл', 'MON_8': 'авг', 'MON_9': 'сен', 'MON_10': 'окт', 'MON_11': 'ноя', 'MON_12': 'дек', 'DAY_OF_WEEK_0': 'Воскресенье', 'DAY_OF_WEEK_1': 'Понедельник', 'DAY_OF_WEEK_2': 'Вторник', 'DAY_OF_WEEK_3': 'Среда', 'DAY_OF_WEEK_4': 'Четверг', 'DAY_OF_WEEK_5': 'Пятница', 'DAY_OF_WEEK_6': 'Суббота', 'DOW_0': 'Вс', 'DOW_1': 'Пн', 'DOW_2': 'Вт', 'DOW_3': 'Ср', 'DOW_4': 'Чт', 'DOW_5': 'Пт', 'DOW_6': 'Сб', 'FD_SECOND_AGO_0': '#VALUE# секунд назад', 'FD_SECOND_AGO_1': '#VALUE# секунду назад', 'FD_SECOND_AGO_10_20': '#VALUE# секунд назад', 'FD_SECOND_AGO_MOD_1': '#VALUE# секунду назад', 'FD_SECOND_AGO_MOD_2_4': '#VALUE# секунды назад', 'FD_SECOND_AGO_MOD_OTHER': '#VALUE# секунд назад', 'FD_SECOND_DIFF_0': '#VALUE# секунд', 'FD_SECOND_DIFF_1': '#VALUE# секунда', 'FD_SECOND_DIFF_10_20': '#VALUE# секунд', 'FD_SECOND_DIFF_MOD_1': '#VALUE# секунда', 'FD_SECOND_DIFF_MOD_2_4': '#VALUE# секунды', 'FD_SECOND_DIFF_MOD_OTHER': '#VALUE# секунд', 'FD_SECOND_SHORT': '#VALUE#с', 'FD_MINUTE_AGO_0': '#VALUE# минут назад', 'FD_MINUTE_AGO_1': '#VALUE# минуту назад', 'FD_MINUTE_AGO_10_20': '#VALUE# минут назад', 'FD_MINUTE_AGO_MOD_1': '#VALUE# минуту назад', 'FD_MINUTE_AGO_MOD_2_4': '#VALUE# минуты назад', 'FD_MINUTE_AGO_MOD_OTHER': '#VALUE# минут назад', 'FD_MINUTE_DIFF_0': '#VALUE# минут', 'FD_MINUTE_DIFF_1': '#VALUE# минута', 'FD_MINUTE_DIFF_10_20': '#VALUE# минут', 'FD_MINUTE_DIFF_MOD_1': '#VALUE# минута', 'FD_MINUTE_DIFF_MOD_2_4': '#VALUE# минуты', 'FD_MINUTE_DIFF_MOD_OTHER': '#VALUE# минут', 'FD_MINUTE_0': '#VALUE# минут', 'FD_MINUTE_1': '#VALUE# минуту', 'FD_MINUTE_10_20': '#VALUE# минут', 'FD_MINUTE_MOD_1': '#VALUE# минуту', 'FD_MINUTE_MOD_2_4': '#VALUE# минуты', 'FD_MINUTE_MOD_OTHER': '#VALUE# минут', 'FD_MINUTE_SHORT': '#VALUE#мин', 'FD_HOUR_AGO_0': '#VALUE# часов назад', 'FD_HOUR_AGO_1': '#VALUE# час назад', 'FD_HOUR_AGO_10_20': '#VALUE# часов назад', 'FD_HOUR_AGO_MOD_1': '#VALUE# час назад', 'FD_HOUR_AGO_MOD_2_4': '#VALUE# часа назад', 'FD_HOUR_AGO_MOD_OTHER': '#VALUE# часов назад', 'FD_HOUR_DIFF_0': '#VALUE# часов', 'FD_HOUR_DIFF_1': '#VALUE# час', 'FD_HOUR_DIFF_10_20': '#VALUE# часов', 'FD_HOUR_DIFF_MOD_1': '#VALUE# час', 'FD_HOUR_DIFF_MOD_2_4': '#VALUE# часа', 'FD_HOUR_DIFF_MOD_OTHER': '#VALUE# часов', 'FD_HOUR_SHORT': '#VALUE#ч', 'FD_YESTERDAY': 'вчера', 'FD_TODAY': 'сегодня', 'FD_TOMORROW': 'завтра', 'FD_DAY_AGO_0': '#VALUE# дней назад', 'FD_DAY_AGO_1': '#VALUE# день назад', 'FD_DAY_AGO_10_20': '#VALUE# дней назад', 'FD_DAY_AGO_MOD_1': '#VALUE# день назад', 'FD_DAY_AGO_MOD_2_4': '#VALUE# дня назад', 'FD_DAY_AGO_MOD_OTHER': '#VALUE# дней назад', 'FD_DAY_DIFF_0': '#VALUE# дней', 'FD_DAY_DIFF_1': '#VALUE# день', 'FD_DAY_DIFF_10_20': '#VALUE# дней', 'FD_DAY_DIFF_MOD_1': '#VALUE# день', 'FD_DAY_DIFF_MOD_2_4': '#VALUE# дня', 'FD_DAY_DIFF_MOD_OTHER': '#VALUE# дней', 'FD_DAY_AT_TIME': '#DAY# в #TIME#', 'FD_DAY_SHORT': '#VALUE#д', 'FD_MONTH_AGO_0': '#VALUE# месяцев назад', 'FD_MONTH_AGO_1': '#VALUE# месяц назад', 'FD_MONTH_AGO_10_20': '#VALUE# месяцев назад', 'FD_MONTH_AGO_MOD_1': '#VALUE# месяц назад', 'FD_MONTH_AGO_MOD_2_4': '#VALUE# месяца назад', 'FD_MONTH_AGO_MOD_OTHER': '#VALUE# месяцев назад', 'FD_MONTH_DIFF_0': '#VALUE# месяцев', 'FD_MONTH_DIFF_1': '#VALUE# месяц', 'FD_MONTH_DIFF_10_20': '#VALUE# месяцев', 'FD_MONTH_DIFF_MOD_1': '#VALUE# месяц', 'FD_MONTH_DIFF_MOD_2_4': '#VALUE# месяца', 'FD_MONTH_DIFF_MOD_OTHER': '#VALUE# месяцев', 'FD_MONTH_SHORT': '#VALUE#мес', 'FD_YEARS_AGO_0': '#VALUE# лет назад', 'FD_YEARS_AGO_1': '#VALUE# год назад', 'FD_YEARS_AGO_10_20': '#VALUE# лет назад', 'FD_YEARS_AGO_MOD_1': '#VALUE# год назад', 'FD_YEARS_AGO_MOD_2_4': '#VALUE# года назад', 'FD_YEARS_AGO_MOD_OTHER': '#VALUE# лет назад', 'FD_YEARS_DIFF_0': '#VALUE# лет', 'FD_YEARS_DIFF_1': '#VALUE# год', 'FD_YEARS_DIFF_10_20': '#VALUE# лет', 'FD_YEARS_DIFF_MOD_1': '#VALUE# год', 'FD_YEARS_DIFF_MOD_2_4': '#VALUE# года', 'FD_YEARS_DIFF_MOD_OTHER': '#VALUE# лет', 'FD_YEARS_SHORT_0': '#VALUE#л', 'FD_YEARS_SHORT_1': '#VALUE#г', 'FD_YEARS_SHORT_10_20': '#VALUE#л', 'FD_YEARS_SHORT_MOD_1': '#VALUE#г', 'FD_YEARS_SHORT_MOD_2_4': '#VALUE#г', 'FD_YEARS_SHORT_MOD_OTHER': '#VALUE#л', 'CAL_BUTTON': 'Выбрать', 'CAL_TIME_SET': 'Установить время', 'CAL_TIME': 'Время', 'FD_LAST_SEEN_TOMORROW': 'завтра в #TIME#', 'FD_LAST_SEEN_NOW': 'только что', 'FD_LAST_SEEN_TODAY': 'сегодня в #TIME#', 'FD_LAST_SEEN_YESTERDAY': 'вчера в #TIME#', 'FD_LAST_SEEN_MORE_YEAR': 'более года назад' });</script>
+    <script type="extension/settings"
+        data-extension="main.date">{"formats":{"FORMAT_DATE":"DD.MM.YYYY","FORMAT_DATETIME":"DD.MM.YYYY HH:MI:SS","SHORT_DATE_FORMAT":"d.m.Y","MEDIUM_DATE_FORMAT":"j M Y","LONG_DATE_FORMAT":"j F Y","DAY_MONTH_FORMAT":"j F","DAY_SHORT_MONTH_FORMAT":"j M","SHORT_DAY_OF_WEEK_MONTH_FORMAT":"D, j F","SHORT_DAY_OF_WEEK_SHORT_MONTH_FORMAT":"D, j M","DAY_OF_WEEK_MONTH_FORMAT":"l, j F","FULL_DATE_FORMAT":"l, j F  Y","SHORT_TIME_FORMAT":"H:i","LONG_TIME_FORMAT":"H:i:s"}}</script>
+    <script type="text/javascript">(window.BX || top.BX).message({ 'WEEK_START': '1' });</script>
+    <script
+        type="text/javascript">(window.BX || top.BX).message({ 'CORE_CLIPBOARD_COPY_SUCCESS': 'Скопировано', 'CORE_CLIPBOARD_COPY_FAILURE': 'Не удалось скопировать' });</script>
+    <script
+        type="text/javascript">(window.BX || top.BX).message({ 'MAIN_SIDEPANEL_CLOSE': 'Закрыть', 'MAIN_SIDEPANEL_PRINT': 'Печать', 'MAIN_SIDEPANEL_NEW_WINDOW': 'Открыть в новом окне', 'MAIN_SIDEPANEL_COPY_LINK': 'Скопировать ссылку' });</script>
+    <script
+        type="text/javascript">(window.BX || top.BX).message({ 'LANGUAGE_ID': 'ru', 'FORMAT_DATE': 'DD.MM.YYYY', 'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS', 'COOKIE_PREFIX': 'BITRIX_SM', 'SERVER_TZ_OFFSET': '10800', 'UTF_MODE': 'Y', 'SITE_ID': 'vi', 'SITE_DIR': '/', 'USER_ID': '', 'SERVER_TIME': '1765441325', 'USER_TZ_OFFSET': '0', 'USER_TZ_AUTO': 'Y', 'bitrix_sessid': 'dd66322659b9d693a11a4812af6fa933' });</script>
+
+
+    <script type="text/javascript" src="/bitrix/js/pull/protobuf/protobuf.min.js?167127225976433"></script>
+    <script type="text/javascript" src="/bitrix/js/pull/protobuf/model.min.js?167127225914190"></script>
+    <script type="text/javascript" src="/bitrix/js/main/core/core_promise.min.js?16712712012490"></script>
+    <script type="text/javascript" src="/bitrix/js/rest/client/rest.client.min.js?16712731909240"></script>
+    <script type="text/javascript" src="/bitrix/js/pull/client/pull.client.min.js?168642187448309"></script>
+    <script type="text/javascript" src="/bitrix/js/main/date/main.date.min.js?168642197517992"></script>
+    <script type="text/javascript" src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?168642197565670"></script>
+    <script type="text/javascript" src="/bitrix/js/main/core/core_date.min.js?167127340926661"></script>
+    <script type="text/javascript" src="https://unpkg.com/vuex@3.5.1/dist/vuex.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script type="text/javascript" src="/bitrix/js/main/jquery/jquery-3.6.0.min.js?167127480889501"></script>
+    <script type="text/javascript"
+        src="https://www.google.com/recaptcha/api.js?render=6LeI6OAZAAAAAHR2f12pbrG9Dr0Ll4OuSZhyw_h9"></script>
+    <script type="text/javascript"
+        src="https://polyfill.io/v3/polyfill.min.js?features=es7%2Ces6%2CURL%2CURLSearchParams"></script>
+    <script type="text/javascript" src="/bitrix/js/main/core/core_fx.min.js?16550393699768"></script>
+    <script type="text/javascript" src="/bitrix/js/main/pageobject/pageobject.min.js?1671272061570"></script>
+    <script type="text/javascript" src="/bitrix/js/main/core/core_clipboard.min.js?16712748082246"></script>
+    <script type="text/javascript" src="/bitrix/js/main/sidepanel/manager.js?176416727561718"></script>
+    <script type="text/javascript" src="/bitrix/js/main/sidepanel/slider.js?176416110555431"></script>
+    <script
+        type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core_date.css', '/bitrix/js/main/sidepanel/css/sidepanel.css', '/local/components/forumedia/inform.newsbox.wiget/templates/.default/style.css', '/local/components/forumedia/main.newsbox.wiget/templates/api_calendar_scroll/style.css', '/local/components/forumedia/main.news.list/templates/news/style.css', '/local/templates/fm-design/components/bitrix/menu/dropdown/style.css', '/local/templates/fm-design/components/bitrix/system.auth.form/desing2_popup/style.css', '/local/components/forumedia/api.show.result/templates/header_resources/style.css', '/local/templates/fm-design/components/bitrix/search.form/desing2/style.css', '/local/templates/fm-design/components/bitrix/menu/header_menu_bottom/style.css', '/local/templates/fm-design/fonts/style.css', '/local/templates/fm-design/assets/vendors/slick/slick.css', '/local/templates/fm-design/assets/vendors/slick/slick-theme.css', '/local/templates/fm-design/assets/vendors/simplebar/simplebar.min.css', '/local/templates/fm-design/assets/vendors/ecco-lightbox/ekko-lightbox.css', '/local/templates/fm-design/assets/vendors/select2/select2.min.css', '/local/templates/fm-design/assets/vendors/select2/select2-bootstrap4.css', '/local/templates/fm-design/assets/vendors/button-visually-impaired/bvi.min.css', '/local/templates/fm-design/assets/vendors/fontawesome-5.15.4/css/all.min.css', '/local/templates/fm-design/styles/main.css', '/local/components/forumedia/feedback.form/templates/popup_error/style.css', '/bitrix/components/bitrix/form.result.new/error.css', '/local/components/forumedia/cookie.agree/templates/.default/style.css', '/local/templates/fm-design/styles.css']);</script>
+    <script
+        type="text/javascript">if (Intl && Intl.DateTimeFormat) document.cookie = "BITRIX_SM_TZ=" + Intl.DateTimeFormat().resolvedOptions().timeZone + "; path=/; expires=Tue, 01 Dec 2026 00:00:00 +0300";</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:image" content="/local/templates/fm-design/images/caduceus.jpg">
+
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="new-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+      
+    </style>
+    <title>Торгово-промышленная палата Российской&nbsp;Федерации</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__bar">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <button class="burger-menu-toggle" aria-label="Открыть меню" type="button">
+                                <span class="burger-menu-toggle__line"></span>
+                                <span class="burger-menu-toggle__line"></span>
+                                <span class="burger-menu-toggle__line"></span>
+                            </button>
+                            <div class="logo">
+                                <a href="">
+                                    <div class="d-flex align-items-center">
+                                        <div class="logo__image">
+                                            <img src="./images/logo-tpprf.png" alt="">
+                                        </div>
+                                        <div class="logo__body">
+                                            <h1 class="logo__title m-0">Видеоканал «ТПП-ИНФОРМ»</h1>
+                                            <p class="logo__subtitle m-0">Торгово-промышленная палата РФ</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="header__actions d-flex align-items-center">
+                                <div class="news-search">
+                                    <input type="text" class="form-control" placeholder="Поиск новостей...">
+                                    <div class="news-search__icon">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.5 0C11.6421 0 15 3.35786 15 7.5C15 9.21048 14.4259 10.7861 13.4619 12.0479L16.707 15.293L16 16L12.8037 12.8037C11.4465 14.1609 9.57107 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0ZM7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14C9.29493 14 10.9204 13.2729 12.0967 12.0967L12 12L12.707 11.293L12.7471 11.333C13.5336 10.2581 14 8.93401 14 7.5C14 3.91015 11.0899 1 7.5 1Z"
+                                                fill="#5A657D" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="auth">
+                                    <a href="">
+                                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 9C10.2091 9 12 10.7909 12 13V15H11V13C11 11.3431 9.65685 10 8 10H4C2.34315 10 1 11.3431 1 13V15H0V13C6.68337e-07 10.7909 1.79086 9 4 9H8Z"
+                                                fill="black" />
+                                            <circle cx="6" cy="4" r="3.5" stroke="black" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="header__main">
+                        <nav class="nav">
+                            <div class="nav__search-mobile">
+                                <div class="news-search">
+                                    <input type="text" class="form-control" placeholder="Поиск новостей...">
+                                    <div class="news-search__icon">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.5 0C11.6421 0 15 3.35786 15 7.5C15 9.21048 14.4259 10.7861 13.4619 12.0479L16.707 15.293L16 16L12.8037 12.8037C11.4465 14.1609 9.57107 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0ZM7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14C9.29493 14 10.9204 13.2729 12.0967 12.0967L12 12L12.707 11.293L12.7471 11.333C13.5336 10.2581 14 8.93401 14 7.5C14 3.91015 11.0899 1 7.5 1Z"
+                                                fill="#5A657D" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="nav__list d-flex justify-content-between w-100 m-0 p-0">
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Главная</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Экономика и бизнес</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Международное сотрудничество</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Партнёрские проекты</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Система ТПП в РФ</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Анонсы и трансляции</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Видеотека</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main-content">
+                <section class="news section-indent">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <a href="">
+                                    <div class="news-card">
+                                        <div class="news-card__badge">
+                                            <div class="mr-2">
+                                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M14.5292 0H9.75117C9.49131 0 9.28037 0.182559 9.28037 0.408027V1.23221C9.28037 1.45742 9.49131 1.64023 9.75117 1.64023H11.7694L7.63975 5.21904L5.88896 3.7017C5.51924 3.38152 4.92012 3.38152 4.55039 3.7017L0.137988 7.52629C-0.0459961 7.68549 -0.0459961 7.94397 0.137988 8.10316L0.810352 8.68613C0.994043 8.84533 1.29229 8.84533 1.47598 8.68613L5.21982 5.44147L6.97031 6.95881C7.34001 7.27931 7.93922 7.27944 8.30889 6.95881L13.1074 2.80008V4.54924C13.1074 4.77445 13.3181 4.95727 13.5782 4.95727H14.5292C14.7894 4.95727 15 4.77445 15 4.54924V0.408027C15 0.182559 14.7894 0 14.5292 0Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <span>Новость дня</span>
+                                        </div>
+
+                                        <div class="news-card__image">
+                                            <img src="images/news-day-img.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <h3 class="news-card__title">Торгово-промышленная палата оценила, на
+                                                сколько
+                                                ЦБ
+                                                может снизить ставку</h3>
+                                            <p class="news-card__description">
+                                                Торгово-промышленная палата России представила комплексную программу
+                                                поддержки предприятий в области цифровизации.
+                                            </p>
+                                            <div class="news-card__date">
+                                                <div class="mr-2">
+                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        <circle cx="7.5" cy="7.5" r="7" stroke="#717182" />
+                                                        <line x1="7.5" y1="8" x2="7.5" y2="3" stroke="#717182" />
+                                                        <path d="M9.66895 9.64301L7.02607 7.00002" stroke="#717182" />
+                                                    </svg>
+                                                </div>
+                                                <span>15 октября 2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="news-list__header d-flex align-items-center">
+                                    <div class="mr-2">
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.5292 2.41992H9.75117C9.49131 2.41992 9.28037 2.63057 9.28037 2.89072V3.8417C9.28037 4.10156 9.49131 4.3125 9.75117 4.3125H11.7694L7.63975 8.44189L5.88896 6.69111C5.51924 6.32168 4.92012 6.32168 4.55039 6.69111L0.137988 11.1041C-0.0459961 11.2878 -0.0459961 11.586 0.137988 11.7697L0.810352 12.4424C0.994043 12.6261 1.29229 12.6261 1.47598 12.4424L5.21982 8.69854L6.97031 10.4493C7.34001 10.8191 7.93922 10.8193 8.30889 10.4493L13.1074 5.65078V7.66904C13.1074 7.92891 13.3181 8.13984 13.5782 8.13984H14.5292C14.7894 8.13984 15 7.92891 15 7.66904V2.89072C15 2.63057 14.7894 2.41992 14.5292 2.41992Z"
+                                                fill="#CF2144" />
+                                        </svg>
+                                    </div>
+                                    <span class="news-list__header-title">Популярное</span>
+                                </div>
+                                <ul class="news-list">
+                                    <li class="news-list__item">
+                                        <a href="" class="news-list__item-link d-flex">
+                                            <div class="news-list__item-date d-flex flex-column">
+                                                <span>12</span>
+                                                <span>май</span>
+                                            </div>
+                                            <div class="flex-grow-1 d-flex flex-column">
+                                                <div class="news-list__item-title">Торгово-промышленная палата
+                                                    оценила,
+                                                    на сколько ЦБ может снизить ставку
+                                                </div>
+                                                <p class="news-list__item-desc m-0">
+                                                    Согласно отчету Минэкономразвития России, в январе&ndash;сентябре
+                                                    2025
+                                                    года
+                                                    ВВП страны вырос на 1 %
+                                                    Экономика России вошла в стадию умеренного роста, который будет
+                                                    сохраняться
+                                                    в 2026 году, заявляет правительство. Экономику России ждёт стагнация
+                                                    в
+                                                    предстоящий период, парируют эксперты. В сентябре Минэкономики РФ
+                                                    понизило
+                                                    прогноз роста ВВП по итогам 2025 года с 2,5 % до 1 %, а Банк
+                                                    России
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="news-list__item">
+                                        <a href="" class="news-list__item-link d-flex">
+                                            <div class="news-list__item-date d-flex flex-column">
+                                                <span>23</span>
+                                                <span>апр</span>
+                                            </div>
+                                            <div class="flex-grow-1 d-flex flex-column">
+                                                <div class="news-list__item-title">Экспортный потенциал российских
+                                                    регионов обсудили на форуме
+                                                </div>
+                                                <p class="news-list__item-desc m-0">
+                                                    Торгово-промышленная палата России предст комплексную программу
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="news-list__item">
+                                        <a href="" class="news-list__item-link d-flex">
+                                            <div class="news-list__item-date d-flex flex-column">
+                                                <span>09</span>
+                                                <span>мар</span>
+                                            </div>
+                                            <div class="flex-grow-1 d-flex flex-column">
+                                                <div class="news-list__item-title">Новые возможности для
+                                                    импортозамещения в промышленности
+                                                </div>
+                                                <p class="news-list__item-desc m-0">
+                                                    Торгово-промышленная палата России представила комплексную программу
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="news-list__item">
+                                        <a href="" class="news-list__item-link d-flex">
+                                            <div class="news-list__item-date d-flex flex-column">
+                                                <span>19</span>
+                                                <span>фев</span>
+                                            </div>
+                                            <div class="flex-grow-1 d-flex flex-column">
+                                                <div class="news-list__item-title">Развитие инфраструктуры для экспорта
+                                                    в регионах ТПП
+                                                </div>
+                                                <p class="news-list__item-desc m-0">
+                                                    Торгово-промышленная палата России представила комплексную программу
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="news-list__item">
+                                        <a href="" class="news-list__item-link d-flex">
+                                            <div class="news-list__item-date d-flex flex-column">
+                                                <span>01</span>
+                                                <span>янв</span>
+                                            </div>
+                                            <div class="flex-grow-1 d-flex flex-column">
+                                                <div class="news-list__item-title">Торгово-промышленная палата оценила,
+                                                    на сколько ЦБ может снизить ставку
+                                                </div>
+                                                <p class="news-list__item-desc m-0">
+                                                    Торгово-промышленная палата России представила комплексную программу
+                                                    поддерж
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <a href="">
+                                    <div class="news-card">
+                                        <div class="news-card__badge news-card__badge--right orange">
+                                            <div class="mr-2">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                    <path
+                                                        d="M7.87013 0.142364C7.7353 0.0483953 7.5721 -0.00285735 7.40025 0.000127428C7.07989 0.00603956 6.79566 0.201885 6.67527 0.498109L5.03638 4.53722L0.710454 5.02051C0.39302 5.05525 0.127463 5.27555 0.0344898 5.58167C-0.0581566 5.88733 0.0393378 6.2174 0.283533 6.42344L3.61116 9.22187L2.72486 13.4876C2.66011 13.8012 2.78727 14.1215 3.04931 14.3042C3.31136 14.4868 3.6559 14.4953 3.92738 14.3265L7.62306 12.018L11.3997 14.1711C11.6777 14.3298 12.0215 14.3065 12.2762 14.1138C12.5309 13.9211 12.6464 13.5955 12.5692 13.2857L11.525 9.06032L14.7472 6.12485C14.984 5.90888 15.0692 5.57437 14.9637 5.2723C14.8586 4.97055 14.5837 4.76142 14.2665 4.73997L9.92745 4.43555L8.14078 0.468966C8.08008 0.33529 7.98655 0.223508 7.87013 0.142364ZM9.37784 5.22413C9.49426 5.30527 9.63135 5.35436 9.77786 5.36511L13.8739 5.65095L10.8327 8.42167C10.6161 8.61876 10.5251 8.91877 10.5957 9.20342L11.5812 13.1936L8.01495 11.1605C7.75808 11.0143 7.44459 11.0214 7.19514 11.1781L3.70939 13.3571L4.546 9.33106C4.60671 9.045 4.50484 8.74843 4.2793 8.55845L1.1371 5.9159L5.22169 5.45942C5.51406 5.42703 5.76363 5.23828 5.87349 4.96596L7.42088 1.15421L9.10712 4.89762C9.16782 5.03129 9.26141 5.14298 9.37784 5.22413ZM3.62832 9.1394C3.62832 9.1394 3.62872 9.13883 3.62848 9.13797L3.62832 9.1394ZM7.69241 11.9742L7.6937 11.9735C7.6933 11.9741 7.6933 11.9741 7.69241 11.9742Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+                                            <span>Новость недели</span>
+                                        </div>
+
+                                        <div class="news-card__image">
+                                            <img src="images/news-week-img.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body bg-gray">
+                                            <div class="news-card__date">
+                                                <div class="mr-2">
+                                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                                        <circle cx="7.5" cy="7.5" r="7" stroke="#717182" />
+                                                        <line x1="7.5" y1="8" x2="7.5" y2="3" stroke="#717182" />
+                                                        <path d="M9.66895 9.64301L7.02607 7.00002" stroke="#717182" />
+                                                    </svg>
+                                                </div>
+                                                <span>15 октября 2025</span>
+                                            </div>
+                                            <h3 class="news-card__title">Цифровая трансформация торговли: ТПП РФ
+                                                запускает масштабную программу поддержки</h3>
+                                            <p class="news-card__description">
+                                                Торгово-промышленная палата России представила комплексную программу
+                                                поддержки предприятий в области цифровизации. Инициатива включает
+                                                обучение, консультации и финансирование для малого и среднего бизнеса,
+                                                стремящегося к цифровой трансформации своих процессов. финансирование
+                                                для малого стремящегося...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="calendar" class="calendar section-indent">
+                    <div id="calendar-app-9910" class="calendar_app">
+                        <div class="container">
+                            <div class="calendar__row">
+                                <div class="dropdown calendar__months d-none d-sm-block"><a id="dropdownMenuLink"
+                                        href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" class="btn dropdown-toggle calendar__month"> Октябрь </a>
+                                    <div aria-labelledby="dropdownMenuLink" class="dropdown-menu"><a href="#"
+                                            class="calendar__month dropdown-item"> Январь</a><a href="#"
+                                            class="calendar__month dropdown-item"> Февраль</a><a href="#"
+                                            class="calendar__month dropdown-item"> Март</a><a href="#"
+                                            class="calendar__month dropdown-item"> Апрель</a><a href="#"
+                                            class="calendar__month dropdown-item"> Май</a><a href="#"
+                                            class="calendar__month dropdown-item"> Июнь</a><a href="#"
+                                            class="calendar__month dropdown-item"> Июль</a><a href="#"
+                                            class="calendar__month dropdown-item"> Август</a><a href="#"
+                                            class="calendar__month dropdown-item"> Сентябрь</a><a href="#"
+                                            class="calendar__month dropdown-item"> Октябрь</a><a href="#"
+                                            class="calendar__month dropdown-item"> Ноябрь</a><a href="#"
+                                            class="calendar__month dropdown-item"> Декабрь</a></div>
+                                </div>
+                                <ul class="calendar__days">
+                                    <li class="calendar__day  calendar__day_no-events"><button
+                                            class="calendar__day-btn">20</button></li>
+                                    <li class="calendar__day calendar__day_no-events"><button
+                                            class="calendar__day-btn">21</button></li>
+                                    <li class="calendar__day calendar__day_no-events"><button
+                                            class="calendar__day-btn">22</button></li>
+                                    <li class="calendar__day  calendar__day_no-events"><button
+                                            class="calendar__day-btn">23</button></li>
+                                    <li
+                                        class="calendar__day  calendar__day_current calendar__day_active calendar__day_no-events">
+                                        <button class="calendar__day-btn">24</button>
+                                    </li>
+                                    <li class="calendar__day calendar__day_off-time  calendar__day_no-events"><button
+                                            class="calendar__day-btn">25</button></li>
+                                    <li class="calendar__day calendar__day_off-time calendar__day_no-events"><button
+                                            class="calendar__day-btn">26</button></li>
+                                    <li class="calendar__day  calendar__day_no-events"><button
+                                            class="calendar__day-btn">27</button></li>
+                                    <li class="calendar__day  calendar__day_no-events"><button
+                                            class="calendar__day-btn">28</button></li>
+                                    <li class="calendar__day calendar__day_no-events"><button
+                                            class="calendar__day-btn">29</button></li>
+                                    <li class="calendar__day  calendar__day_no-events"><button
+                                            class="calendar__day-btn">30</button></li>
+                                    <li class="calendar__day  calendar__day_no-events"><button
+                                            class="calendar__day-btn">1</button></li>
+                                    <li class="calendar__day calendar__day_off-time calendar__day_no-events"><button
+                                            class="calendar__day-btn">2</button></li>
+                                    <li class="calendar__day calendar__day_off-time  calendar__day_no-events"><button
+                                            class="calendar__day-btn">3</button></li>
+                                    <li class="calendar__day  calendar__day_no-events"><button
+                                            class="calendar__day-btn">4</button></li>
+                                    <li class="calendar__day  calendar__day_no-events"><button
+                                            class="calendar__day-btn">5</button></li>
+                                    <li class="calendar__day calendar__day_no-events"><button
+                                            class="calendar__day-btn">6</button></li>
+                                    <li class="calendar__day  calendar__day_no-events"><button
+                                            class="calendar__day-btn">7</button></li>
+                                    <li class="calendar__day  calendar__day_no-events"><button
+                                            class="calendar__day-btn">8</button></li>
+                                    <li class="calendar__day calendar__day_off-time calendar__day_no-events"><button
+                                            class="calendar__day-btn">9</button></li>
+                                    <li class="calendar__day calendar__day_off-time calendar__day_no-events"><button
+                                            class="calendar__day-btn">10</button></li>
+                                    <li class="calendar__day  calendar__day_no-events"><button
+                                            class="calendar__day-btn">11</button></li>
+                                    <li class="calendar__day calendar__day_no-events"><button
+                                            class="calendar__day-btn">12</button></li>
+                                    <li class="calendar__day calendar__day_no-events"><button
+                                            class="calendar__day-btn">13</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="calendar__events-container">
+                            <div class="slider pt-4" >
+                                <div class="container">
+                                    <div class="swiper calendar-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="">
+                                                    <div class="news-card news-card--small">
+                                                        <div class="news-card__image">
+                                                            <img src="images/imgslide1.png" alt="">
+                                                        </div>
+                                                        <div class="news-card__body">
+                                                            <div class="news-card__category">
+                                                                <span>Анонсы</span>
+                                                            </div>
+                                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                                            <p class="news-card__description news-card__description--two-lines">
+                                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                                            </p>
+                                                            <div class="news-card__date">
+                                                                <span>15 октября 2025</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="">
+                                                    <div class="news-card news-card--small">
+                                                        <div class="news-card__image">
+                                                            <img src="images/imgslide2.png" alt="">
+                                                        </div>
+                                                        <div class="news-card__body">
+                                                            <div class="news-card__category">
+                                                                <span>Анонсы</span>
+                                                            </div>
+                                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                                            <p class="news-card__description news-card__description--two-lines">
+                                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                                            </p>
+                                                            <div class="news-card__date">
+                                                                <span>15 октября 2025</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="">
+                                                    <div class="news-card news-card--small">
+                                                        <div class="news-card__image">
+                                                            <img src="images/imgslide3.png" alt="">
+                                                        </div>
+                                                        <div class="news-card__body">
+                                                            <div class="news-card__category">
+                                                                <span>Анонсы</span>
+                                                            </div>
+                                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                                            <p class="news-card__description news-card__description--two-lines">
+                                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                                            </p>
+                                                            <div class="news-card__date">
+                                                                <span>15 октября 2025</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="">
+                                                    <div class="news-card news-card--small">
+                                                        <div class="news-card__image">
+                                                            <img src="images/imgslide4.png" alt="">
+                                                        </div>
+                                                        <div class="news-card__body">
+                                                            <div class="news-card__category">
+                                                                <span>Анонсы</span>
+                                                            </div>
+                                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                                            <p class="news-card__description news-card__description--two-lines">
+                                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                                            </p>
+                                                            <div class="news-card__date">
+                                                                <span>15 октября 2025</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="">
+                                                    <div class="news-card news-card--small">
+                                                        <div class="news-card__image">
+                                                            <img src="images/imgslide1.png" alt="">
+                                                        </div>
+                                                        <div class="news-card__body">
+                                                            <div class="news-card__category">
+                                                                <span>Анонсы</span>
+                                                            </div>
+                                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                                            <p class="news-card__description news-card__description--two-lines">
+                                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                                            </p>
+                                                            <div class="news-card__date">
+                                                                <span>15 октября 2025</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="">
+                                                    <div class="news-card news-card--small">
+                                                        <div class="news-card__image">
+                                                            <img src="images/imgslide2.png" alt="">
+                                                        </div>
+                                                        <div class="news-card__body">
+                                                            <div class="news-card__category">
+                                                                <span>Анонсы</span>
+                                                            </div>
+                                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                                            <p class="news-card__description news-card__description--two-lines">
+                                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                                            </p>
+                                                            <div class="news-card__date">
+                                                                <span>15 октября 2025</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="">
+                                                    <div class="news-card news-card--small">
+                                                        <div class="news-card__image">
+                                                            <img src="images/imgslide3.png" alt="">
+                                                        </div>
+                                                        <div class="news-card__body">
+                                                            <div class="news-card__category">
+                                                                <span>Анонсы</span>
+                                                            </div>
+                                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                                            <p class="news-card__description news-card__description--two-lines">
+                                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                                            </p>
+                                                            <div class="news-card__date">
+                                                                <span>15 октября 2025</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="calendar__no-data-text" style="display: none;">На выбранную дату событий не найдено.</h4>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="publications section-indent">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-4 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--card-img">
+                                        <div class="news-card__badge">
+                                            <span>Международное сотрудничество</span>
+                                        </div>
+                                        <div class="news-card__image">
+                                            <img src="images/img1.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--card-img">
+                                        <div class="news-card__badge">
+                                            <span>Видеотека</span>
+                                        </div>
+                                        <div class="news-card__image">
+                                            <img src="images/img2.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--card-img">
+                                        <div class="news-card__badge">
+                                            <span>Партнёрские проекты</span>
+                                        </div>
+                                        <div class="news-card__image">
+                                            <img src="images/img3.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--card-img">
+                                        <div class="news-card__badge">
+                                            <span>Система ТПП в РФ</span>
+                                        </div>
+                                        <div class="news-card__image">
+                                            <img src="images/img4.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--card-img">
+                                        <div class="news-card__badge">
+                                            <span>Экономика</span>
+                                        </div>
+                                        <div class="news-card__image">
+                                            <img src="images/img5.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--card-img">
+                                        <div class="news-card__badge">
+                                            <span>Партнёрство</span>
+                                        </div>
+                                        <div class="news-card__image">
+                                            <img src="images/img2.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="news-page section-indent">
+                    <div class="container">
+                        <div class="mb-3" id="newsFilterBlock">
+                            <form action="" id="newsFilter" class="form-filter form-row">
+                                <div class="col-sm-3 d-flex mb-3 mb-sm-0">
+                                    <input type="text" onclick="BX.calendar({node: this, field: this, bTime: false});"
+                                        id="DATE_START" name="DATE_START" placeholder="c" value=""
+                                        class="form-control mr-3 form-filter-input" />
+                                    <input type="text" onclick="BX.calendar({node: this, field: this, bTime: false});"
+                                        id="DATE_FINISH" name="DATE_FINISH" placeholder="по" value=""
+                                        class="form-control form-filter-input" />
+                                </div>
+                                <div class="col-sm-3 mb-3 mb-sm-0">
+                                    <select name="tags" id="tags-select"
+                                        class="form-control flex-fill form-filter-select">
+                                        <option value="" disabled selected hidden>Выберите теги</option>
+                                        <option value="tag1">Тег 1</option>
+                                        <option value="tag2">Тег 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-secondary clear-btn"
+                                            id="clear-btn">Очистить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row news-page__list">
+                            <div class="col-12 col-sm-6 col-md-3 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--small">
+                                        <div class="news-card__image">
+                                            <img src="images/news-day-img.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <div class="news-card__category">
+                                                <span>Анонсы</span>
+                                            </div>
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                            <p class="news-card__description news-card__description--two-lines">
+                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                            </p>
+                                            <div class="news-card__date">
+                                                <span>15 октября 2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-3 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--small">
+                                        <div class="news-card__image">
+                                            <img src="images/news-day-img.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <div class="news-card__category">
+                                                <span>Анонсы</span>
+                                            </div>
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                            <p class="news-card__description news-card__description--two-lines">
+                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                            </p>
+                                            <div class="news-card__date">
+                                                <span>15 октября 2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-3 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--small">
+                                        <div class="news-card__image">
+                                            <img src="images/news-day-img.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <div class="news-card__category">
+                                                <span>Анонсы</span>
+                                            </div>
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                            <p class="news-card__description news-card__description--two-lines">
+                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                            </p>
+                                            <div class="news-card__date">
+                                                <span>15 октября 2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-3 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--small">
+                                        <div class="news-card__image">
+                                            <img src="images/news-day-img.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <div class="news-card__category">
+                                                <span>Анонсы</span>
+                                            </div>
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                            <p class="news-card__description news-card__description--two-lines">
+                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                            </p>
+                                            <div class="news-card__date">
+                                                <span>15 октября 2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-3 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--small">
+                                        <div class="news-card__image">
+                                            <img src="images/news-day-img.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <div class="news-card__category">
+                                                <span>Анонсы</span>
+                                            </div>
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                            <p class="news-card__description news-card__description--two-lines">
+                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                            </p>
+                                            <div class="news-card__date">
+                                                <span>15 октября 2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-3 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--small">
+                                        <div class="news-card__image">
+                                            <img src="images/news-day-img.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <div class="news-card__category">
+                                                <span>Анонсы</span>
+                                            </div>
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                            <p class="news-card__description news-card__description--two-lines">
+                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                            </p>
+                                            <div class="news-card__date">
+                                                <span>15 октября 2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-3 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--small">
+                                        <div class="news-card__image">
+                                            <img src="images/news-day-img.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <div class="news-card__category">
+                                                <span>Анонсы</span>
+                                            </div>
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                            <p class="news-card__description news-card__description--two-lines">
+                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                            </p>
+                                            <div class="news-card__date">
+                                                <span>15 октября 2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-3 py-3">
+                                <a href="">
+                                    <div class="news-card news-card--small">
+                                        <div class="news-card__image">
+                                            <img src="images/news-day-img.png" alt="">
+                                        </div>
+
+                                        <div class="news-card__body">
+                                            <div class="news-card__category">
+                                                <span>Анонсы</span>
+                                            </div>
+                                            <h3 class="news-card__title">Информационно-аналитический журнал ТПП
+                                                Калужской области «Губерния 40» № 3 (92), 2025 г.</h3>
+                                            <p class="news-card__description news-card__description--two-lines">
+                                                Информационно-аналитический журнал ТПП Калужской области «Губерния 40»
+                                            </p>
+                                            <div class="news-card__date">
+                                                <span>15 октября 2025</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-primary btn-load-more">Загрузить еще</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="footer">
+                <div class="container footer__container">
+                    <section class="contacts" id="contacts">
+                        <div class="row">
+                            <div class="col-12 col-md-4 footer-column d-flex align-items-center">
+                                <div class="social">
+                                    <a class="social__item" href="">
+                                        <svg width="17" height="11" viewBox="0 0 17 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.50293 0C8.53763 0.000114874 11.9315 0.019584 14.1787 0.15918L14.208 0.161133C14.2333 0.164014 14.2621 0.16693 14.293 0.169922C14.666 0.206169 15.4413 0.282475 16.125 0.904297C16.7164 1.43324 16.8596 2.47297 16.874 2.58984L16.875 2.59668C16.8807 2.65211 16.9999 3.80688 17 4.96582V6.05176C17 7.21119 16.8807 8.36638 16.875 8.4209L16.873 8.43652C16.8562 8.55243 16.6926 9.56795 16.1299 10.0908C15.4537 10.7264 14.6909 10.7959 14.3242 10.8291C14.2892 10.8322 14.2569 10.8357 14.2285 10.8389L14.1992 10.8408C11.9518 10.9804 8.55742 10.9999 8.52344 11H8.5127C8.33346 10.9978 4.27125 10.9462 2.97461 10.8408L2.93555 10.8359C2.89495 10.8298 2.83475 10.8241 2.76562 10.8174C2.32821 10.7746 1.51497 10.6948 0.87207 10.0938C0.283207 9.56464 0.140372 8.54372 0.125977 8.42871L0.125 8.42188C0.119942 8.37312 0 7.21429 0 6.05176V4.96582C0 3.80679 0.119267 2.65185 0.125 2.59668L0.126953 2.58105C0.143917 2.46528 0.307253 1.44959 0.870117 0.926758C1.55581 0.282365 2.32271 0.206274 2.69141 0.169922C2.72033 0.167041 2.74736 0.163903 2.77148 0.161133L2.80078 0.15918C5.06843 0.0195689 8.46309 0.000110802 8.49707 0H8.50293ZM8.5 0.850586C8.38197 0.851362 5.09212 0.871879 2.88672 1.00684C2.86179 1.00959 2.83457 1.01276 2.80566 1.01562C2.50139 1.04565 2.04164 1.09113 1.60547 1.50098C1.34239 1.74543 1.16668 2.34962 1.11621 2.67969C1.10558 2.78351 0.996094 3.89104 0.996094 4.96582V6.05176C0.996094 7.14074 1.10889 8.26008 1.11719 8.34082C1.1596 8.66589 1.32596 9.26865 1.5957 9.50879L1.60547 9.5166C1.99728 9.88478 2.50658 9.93523 2.87891 9.97168C2.95232 9.97877 3.02245 9.98517 3.08691 9.99414C4.34462 10.0939 8.35113 10.1463 8.52246 10.1484C8.6729 10.1477 11.9386 10.1274 14.1123 9.99316C14.1444 9.98973 14.1804 9.98683 14.2188 9.9834C14.5363 9.9547 14.9712 9.91449 15.3945 9.5166C15.669 9.26157 15.8405 8.61807 15.8828 8.33789C15.8932 8.23594 16.0039 7.12763 16.0039 6.05176V4.96582C16.0039 3.87247 15.8903 2.74844 15.8828 2.67578C15.8404 2.34415 15.6731 1.73132 15.4033 1.49121L15.3994 1.48828C14.9653 1.09272 14.4927 1.0461 14.1797 1.01562C14.1482 1.01252 14.1186 1.00972 14.0918 1.00684C11.9064 0.871915 8.61911 0.851257 8.5 0.850586ZM6.3291 3.08887C6.53516 2.97396 6.78392 2.96988 6.99414 3.07812L10.6504 4.96191C10.8668 5.0734 11.0009 5.28644 11 5.51855C10.999 5.75068 10.8636 5.9633 10.6465 6.07324L6.98926 7.92383C6.88912 7.97449 6.78043 7.99993 6.67188 8C6.55315 8 6.43403 7.97019 6.32715 7.91016C6.12236 7.795 6.00004 7.59167 6 7.36719V3.63281C6.00008 3.40731 6.12296 3.20388 6.3291 3.08887ZM6.96973 6.89746L9.70312 5.51367L6.96973 4.10645V6.89746Z"
+                                                fill="black" />
+                                        </svg>
+                                    </a>
+                                    <a class="social__item" href="">
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.4135 7.5C14.412 8.11659 14.405 8.7332 14.3966 9.34975C14.3864 10.0936 14.3749 10.8378 14.1884 11.569C13.9927 12.3357 13.6069 12.9969 13.0066 13.4864C12.374 14.0023 11.6094 14.2734 10.7842 14.3236C9.68968 14.3902 8.59468 14.4165 7.49971 14.4139C6.40471 14.4165 5.30971 14.3902 4.21521 14.3236C3.38997 14.2734 2.62538 14.0023 1.9928 13.4864C1.39251 12.9969 1.00667 12.3357 0.811026 11.569C0.624463 10.8378 0.612979 10.0936 0.602813 9.34975C0.594376 8.7332 0.587373 8.11659 0.585938 7.5C0.587373 6.88342 0.594376 6.26681 0.602813 5.65026C0.612979 4.90638 0.624463 4.16218 0.811026 3.43105C1.00667 2.66435 1.39251 2.00312 1.9928 1.5136C2.62538 0.997739 3.38997 0.726596 4.21521 0.67641C5.30971 0.609848 6.40471 0.583539 7.49971 0.586117C8.59468 0.583539 9.68968 0.609848 10.7842 0.67641C11.6094 0.726596 12.374 0.997739 13.0066 1.5136C13.6069 2.00312 13.9927 2.66435 14.1884 3.43105C14.3749 4.16218 14.3864 4.90638 14.3966 5.65026C14.405 6.26681 14.412 6.88342 14.4135 7.5Z"
+                                                stroke="black" stroke-width="1.17188" stroke-miterlimit="10" />
+                                            <path
+                                                d="M10.5469 7.5C10.5469 9.19893 9.16961 10.5762 7.47069 10.5762C5.77176 10.5762 4.39452 9.19893 4.39452 7.5C4.39452 5.80107 5.77176 4.42383 7.47069 4.42383C9.16961 4.42383 10.5469 5.80107 10.5469 7.5Z"
+                                                stroke="black" stroke-width="1.17188" stroke-miterlimit="10" />
+                                            <path
+                                                d="M12.4219 3.54492C12.4219 4.03031 12.0284 4.42383 11.543 4.42383C11.0576 4.42383 10.6641 4.03031 10.6641 3.54492C10.6641 3.05953 11.0576 2.66602 11.543 2.66602C12.0284 2.66602 12.4219 3.05953 12.4219 3.54492Z"
+                                                fill="black" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="contacts">
+                                    <ul class="contacts__list m-0">
+                                        <li>
+                                            <span>Адрес:</span> 109102, Москва, ул. Ильинка, 6/1, c.1
+                                        </li>
+                                        <li>
+                                            <span>Телефон:</span> <a href="tel:+74956200455">+7(495) 620-04-55</a>
+                                        </li>
+                                        <li>
+                                            <span>Эл. почта:</span> <a href="mailto:ksv@tpprf.ru">ksv@tpprf.ru</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 footer-column">
+                                <ul class="footer-column__list p-0">
+                                    <li>Видеоканал «ТПП-Информ»</li>
+                                    <li>
+                                        <span>Учредитель:</span> Торгово-промышленная палата Российской Федерации
+                                    </li>
+                                    <li>
+                                        <span>Главный редактор:</span> А.И. Шкирандо
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 col-md-4 footer-column">
+                                <p>Зарегистрирован Федеральной службой по надзору в сфере связи, информационных
+                                    технологий и массовых коммуникаций. Свидетельство о регистрации ЭЛ № ФС 77-73217 от
+                                    13.07.2018</p>
+                            </div>
+                        </div>
+                        <div class="contacts__copyright row justify-content-between">
+                            <div class="copyright col-md-12 mb-3 mb-md-0">
+                                <span>© 2025 Торгово-промышленная палата Российской Федерации. Все права
+                                    защищены.</span>
+                            </div>
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
