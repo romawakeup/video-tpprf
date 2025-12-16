@@ -29529,7 +29529,7 @@ img.new__fake-img {
 .form-filter-select {
     font-family: Helvetica Neue;
     height: 24px;
-    padding: 0 0 0 11px;
+    padding: 0 0 0 11px !important;
     font-weight: 300;
     font-size: 12px;
     line-height: 141%;
