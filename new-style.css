@@ -422,6 +422,18 @@
         font-size: 15.63px;
         line-height: 127%;
     }
+
+    .contacts__copyright:after {
+        content: '';
+        display: block;
+        width: 100vw;
+        height: 1px;
+        background-color: #DBDBDB;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media(max-width: 769px) {
@@ -439,9 +451,33 @@
 
 
     .contacts__copyright {
-    margin: 0;
-    padding: 20px 0 0 0;
-}
+        margin: 0;
+        padding: 20px 0 0 0;
+    }
+
+    .calendar__row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-x;
+    }
+    
+    .calendar__days {
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+        min-width: max-content;
+        width: 100%;
+        touch-action: pan-x;
+    }
+    
+    .calendar__day {
+        flex-shrink: 0;
+    }
 }
 
 /* Скрываем поиск в меню на десктопе */

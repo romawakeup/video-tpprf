@@ -1322,6 +1322,26 @@ div.new__content:after {
     .calendar__day {
         margin: 0 2px;
     }
+    
+    .calendar__row {
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-x;
+    }
+    
+    .calendar__days {
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+        min-width: max-content;
+        touch-action: pan-x;
+    }
+    
+    .calendar__day {
+        flex-shrink: 0;
+    }
 }
 
 .calendar__day-btn {
@@ -1355,11 +1375,6 @@ div.new__content:after {
     opacity: 0.4;
 }
 
-@media all and (max-width: 992px) {
-    .calendar__day-btn {
-        font-size: 14px;
-    }
-}
 
 .calendar__day_off-time .calendar__day-btn {
     color: #FF6900;
