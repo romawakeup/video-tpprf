@@ -136,12 +136,10 @@
     box-shadow: #ff6a007e 0 0 0 .2rem;
 }
 
-/* Анимация для новых карточек */
 .news-page__list .col-12.col-sm-6.col-md-3.py-3 {
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-/* Бургер-меню */
 .burger-menu-toggle {
     display: none;
     width: 30px;
@@ -203,8 +201,20 @@
     transform: translateY(-50%) rotate(-45deg);
 }
 
+@media(max-width: 1115px) {
+    .nav__item {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
 /* Мобильное меню */
 @media (max-width: 991.98px) {
+    .nav__item {
+        text-align: left;
+    }
+
     .header {
         margin: 0;
     }
@@ -248,7 +258,6 @@
         padding: 90px 20px 20px 20px;
         visibility: hidden;
         display: flex;
-        flex-direction: column;
     }
 
     .nav.active {
@@ -345,9 +354,18 @@
         pointer-events: auto;
     }
 
-    /* Предотвращение прокрутки body при открытом меню */
     body.menu-open {
         overflow: hidden;
+    }
+
+    .mob-p {
+        padding: 30px 0.9375rem 30px .9375rem;
+        ;
+    }
+
+    .news-card--card-img .news-card__title {
+        font-size: 15.63px;
+        line-height: 127%;
     }
 }
 
@@ -357,7 +375,17 @@
     }
 
     .publications .row {
-    padding: 0 0 30px 0;
+        padding: 0 0 30px 0;
+    }
+
+    .footer-column {
+        margin-bottom: 25px;
+    }
+
+
+    .contacts__copyright {
+    margin: 0;
+    padding: 20px 0 0 0;
 }
 }
 

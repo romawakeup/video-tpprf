@@ -20207,7 +20207,6 @@ img {
 
 .wrapper {
     background: #daebff;
-    display: flex;
     min-height: 100%;
     overflow: hidden
 }
@@ -28042,10 +28041,6 @@ img.new__fake-img {
     }
 
     .btn-direction-icon {
-        display: none
-    }
-
-    .contacts__copyright:after {
         display: none
     }
 

@@ -56,21 +56,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const body = document.body;
 
     if (burgerToggle && nav) {
-        // Функция закрытия меню
         function closeMenu() {
             burgerToggle.classList.remove('active');
             nav.classList.remove('active');
             body.classList.remove('menu-open');
         }
 
-        // Функция открытия меню
         function openMenu() {
             burgerToggle.classList.add('active');
             nav.classList.add('active');
             body.classList.add('menu-open');
         }
 
-        // Открытие/закрытие меню
         burgerToggle.addEventListener('click', function(e) {
             e.stopPropagation();
             if (nav.classList.contains('active')) {
@@ -80,36 +77,30 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Закрытие меню при клике на затемненный фон
         document.addEventListener('click', function(e) {
             if (nav.classList.contains('active')) {
-                // Проверяем, что клик был вне меню
                 if (!nav.contains(e.target) && !burgerToggle.contains(e.target)) {
                     closeMenu();
                 }
             }
         });
 
-        // Предотвращение закрытия меню при клике внутри меню
         nav.addEventListener('click', function(e) {
             e.stopPropagation();
         });
 
-        // Закрытие меню при клике на ссылку
         navLinks.forEach(function(link) {
             link.addEventListener('click', function() {
                 closeMenu();
             });
         });
 
-        // Закрытие меню при нажатии Escape
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && nav.classList.contains('active')) {
                 closeMenu();
             }
         });
 
-        // Закрытие меню при изменении размера окна (если перешли на десктоп)
         let resizeTimer;
         window.addEventListener('resize', function() {
             clearTimeout(resizeTimer);
